@@ -1,0 +1,365 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: rgb(49, 77, 95);
+    --secondary-color: rgb(34, 34, 41);
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Header Styles */
+header {
+    padding: 20px 35px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-image: url("../images/starry-space.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-position: 80%;
+    z-index: 9999;
+}
+
+header h1 {
+    font-weight: bold;
+    margin: 0;
+    font-size: 36px;
+    color: rgb(10, 79, 143);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+}
+
+header nav {
+    margin: 7px 0;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+    text-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease-out;
+}
+
+header nav ul li a:hover, header nav ul li a:focus {
+    background: var(--primary-color);
+    color: aliceblue;
+    border-radius: 15px;
+    text-shadow: none;
+}
+
+
+/* Hero Style */
+.hero {
+    background-color: var(--secondary-color);
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 35px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.welcome {
+    color: aliceblue;
+    text-align: left;
+    border-right: 3px solid var(--primary-color);
+    height: 90%;
+    margin: 30px 0 0 15px;
+    padding-right: 10px;
+}
+
+.profile-pic {
+    color: aliceblue;
+    margin: 70px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-pic img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    border-radius: 20px;
+}
+
+.about-me {
+    text-align: left;
+    font-size: 15px;
+    background-color: var(--primary-color);
+    color: aliceblue;
+    padding: 20px;
+    width: 400px;
+    height: 400px;
+    line-height: 1.5;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+}
+
+.yours-truly {
+    margin-left: 60%;
+}
+
+.section-title-intro {
+    font-style: italic;
+}
+
+/* Work Section */
+
+.section-title-secondary {
+    color: aliceblue;
+}
+
+.history {
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+}
+
+.history h2 {
+    border-right: 3px solid var(--secondary-color);
+    height: 70%;
+    margin: 30px 0 0 15px;
+    padding-right: 32px;
+}
+
+.table {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.work-content img {
+    width: 350px;
+    height: 350px;
+}
+
+.work-content a {
+    text-decoration: none;
+}
+
+.work-content {
+    margin: 30px auto;
+}
+
+.content-1 {
+    background-image: url(../notetaker.png);
+    background-position: center;
+    background-size: cover;
+    width: 350px;
+    height: 200px;
+    border: 3.5px solid var(--secondary-color);
+    border-radius: 15px;
+    font-size: 29px;
+    transition: width 0.7s, height 0.7s;
+    margin: auto;
+}
+
+.content-1:hover {
+    border-radius: 15px;
+    opacity: 0.7;
+    width: 375px;
+    height: 225px;
+}
+
+.run-buddy {
+    color: var(--secondary-color);
+    text-align: right;
+    padding: 100px 15px 0px 0px;
+}
+
+.content-2 {
+    background-image: url(../images/quizImage.webp);
+    background-position: center;
+    background-size: cover;
+    width: 350px;
+    height: 200px;
+    border: 3.5px solid var(--secondary-color);
+    border-radius: 15px;
+    font-size: 29px;
+    transition: width 0.7s, height 0.7s;
+    margin: auto;
+}
+
+.content-2:hover {
+    border-radius: 15px;
+    opacity: 0.7;
+    width: 375px;
+    height: 225px;
+}
+
+.robot-gladiators {
+    color: var(--secondary-color);
+    text-align: right;
+    padding: 100px 15px 0px 0px;
+}
+
+.content-3 {
+    background-image: url(../images/passwordImage.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 350px;
+    height: 200px;
+    border: 3.5px solid var(--secondary-color);
+    border-radius: 15px;
+    font-size: 29px;
+    transition: width 0.7s, height 0.7s;
+    margin: auto;
+}
+
+.content-3:hover {
+    border-radius: 15px;
+    opacity: 0.7;
+    width: 375px;
+    height: 225px;
+}
+
+.password-generator {
+    color: var(--secondary-color);
+    text-align: right;
+    padding: 100px 15px 0px 0px;
+}
+
+
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+    header {
+        padding-bottom: 0px;
+        justify-content: center;
+        position: relative;
+    }
+    
+    header h1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    header nav ul li a {
+        font-size: 20px;
+    }
+    
+    footer h2, footer div {
+        text-align: center;
+        width: 100%;
+    }
+
+    .hero {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .section-title-secondary {
+        font-size: 80px;
+        text-align: center;
+        align-items: center;
+        padding: auto;
+    }
+
+    .welcome {
+        align-items: center;
+        border-bottom: 3px solid var(--primary-color);
+        width: 50%;
+        margin: auto;
+        border-right: none;
+        text-align: center;
+        font-size: 80px;
+    }
+
+    .profile-pic {
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        margin-bottom: -10px;
+    }
+
+    .profile-pic img {
+        height: 500px;
+        width: 500px;
+        object-fit: contain;
+    }
+
+    .about-me {
+        width: 500px;
+        height: auto;
+    }
+
+    .history {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .history h2 {
+        font-size: 80px;
+        border-right: none;
+        border-bottom: 3px solid var(--secondary-color);
+        text-align: center;
+        padding: auto;
+        margin: auto;
+    }
+}
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+    .profile-pic img {
+        height: 300px;
+        width: 300px;
+        object-fit: cover;
+    }
+
+    .about-me {
+        width: 300px;
+        height: auto;
+    }
+
+    .header {
+        width: 100%;
+    }
+
+    .hero {
+        width: 100%;
+    }
+
+    footer {
+        width: 100%;
+    }
+
+    .welcome {
+        font-size: 70px;
+    }
+
+    .section-title-secondary {
+        font-size: 70px;
+    }
+}
